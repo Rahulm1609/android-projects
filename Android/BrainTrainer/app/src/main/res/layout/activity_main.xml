@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/holo_green_dark"
+        android:onClick="start"
+        android:padding="50dp"
+        android:text="Go!"
+        android:textColor="@android:color/background_light"
+        android:textSize="40sp"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/relLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/colorPrimaryDark"
+            android:padding="10dp"
+            android:text="30s"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:padding="10dp"
+            android:text=""
+            android:textColor="@android:color/background_dark"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="25dp"
+            android:background="@color/colorPrimaryDark"
+            android:padding="10dp"
+            android:text="0/0"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="297dp"
+            android:layout_marginTop="120dp"
+            android:columnCount="2"
+            android:padding="5dp"
+            android:rowCount="2">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="5dp"
+                android:background="@android:color/holo_blue_dark"
+                android:onClick="chooseAnswer"
+                android:tag="0"
+                android:text="3"
+                android:textColor="@android:color/background_light"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="5dp"
+                android:background="@android:color/holo_purple"
+                android:onClick="chooseAnswer"
+                android:tag="1"
+                android:text="3"
+                android:textColor="@android:color/background_light"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="5dp"
+                android:background="@android:color/holo_red_light"
+                android:onClick="chooseAnswer"
+                android:tag="2"
+                android:text="3"
+                android:textColor="@android:color/background_light"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                android:layout_margin="5dp"
+                android:background="@android:color/holo_green_light"
+                android:onClick="chooseAnswer"
+                android:tag="3 "
+                android:text="3"
+                android:textColor="@android:color/background_light"
+                android:textSize="50sp" />
+
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="420dp"
+            android:textColor="@android:color/background_dark"
+            android:textSize="40sp" />
+
+        <Button
+            android:id="@+id/playAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="480dp"
+            android:background="@color/colorPrimaryDark"
+            android:onClick="playAgain"
+            android:padding="5dp"
+            android:text="Play Again"
+            android:textColor="@android:color/background_light"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</RelativeLayout>
